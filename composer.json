@@ -1,0 +1,27 @@
+{
+  "name": "emana-digital/web-toolkit-laravel",
+  "description": "Funções comuns para projetos do Emana em Laravel.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Alfredo Peres",
+      "email": "alfredo@emana.digital"
+    }
+  ],
+  "require": {
+    "php": "^8.0.0",
+    "illuminate/support": "^9.2"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EmanaDigital\\AssetsHelperProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "EmanaDigital\\": "src/"
+    }
+  }
+}

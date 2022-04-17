@@ -1,0 +1,9 @@
+# IDE's
+/.vscode
+/.idea
+
+# Vendor
+/vendor
+
+# OS
+.DS_Store
