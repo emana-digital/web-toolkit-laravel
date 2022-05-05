@@ -25,11 +25,11 @@ class RoutesHelper
 	static public function title($routeName)
 	{
 		$routesConfig = RoutesHelper::getRoutesAndTitle();
-		$routeTitle = $routesConfig["routes.$routeName.title"];
-		$titleSeparator = $routesConfig["title.separator"];
 		$baseTitle = $routesConfig["title.base"];
 
-		if (isset($routeTitle)) {
+		if (isset($routesConfig["routes.$routeName.title"])) {
+			$routeTitle = $routesConfig["routes.$routeName.title"];
+			$titleSeparator = $routesConfig["title.separator"];
 			return $routeTitle . ' ' . $titleSeparator . ' ' . $baseTitle;
 		}
 		return $baseTitle;
